@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/vote"
+            android:layout_gravity="center"
+            android:contentDescription="Vote" />
+
+        <TextView
+            android:id="@+id/Cryptovote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:fontFamily="monospace"
+            android:text="CRYPTO-VOTE"
+            android:textAlignment="center"
+            android:textSize="48dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextUsernameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Cryptovote">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adminUsername"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextPasswordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextUsernameLayout"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adminPassword"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adloginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPasswordLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_corner"
+            android:fontWeight="10"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/backVoterLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="Voter Login"
+            android:textColor="#0537B6"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/adloginbtn" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

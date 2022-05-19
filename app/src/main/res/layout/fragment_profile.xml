@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Cryptovote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="CRYPTO-VOTE"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#286090"
+        />
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_below="@id/Cryptovote"
+        >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        app:srcCompat="@drawable/profile"
+        app:strokeWidth="1dp"
+        />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLayout"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Name:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/userName"
+                android:textSize="15dp"
+                android:breakStrategy="simple"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Aadhaar No.:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/aadhaarNumber"
+                android:textSize="15dp"
+                android:breakStrategy="simple"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:text="E-mail:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/email"
+                android:textSize="15dp"
+                android:breakStrategy="simple"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:text="DOB:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/dobProfile"
+                android:textSize="15dp"
+                android:breakStrategy="simple"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Age:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/age"
+                android:textSize="15dp"
+                android:breakStrategy="simple"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Registered:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/Registered"
+                android:textSize="15dp"
+                android:breakStrategy="simple"
+                />
+        </TableRow>
+    </TableLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textFontWeight="10"
+        android:padding="10dp"
+        android:text="Log Out"
+        android:layout_below="@id/tableView"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner"
+        />
+</RelativeLayout>
