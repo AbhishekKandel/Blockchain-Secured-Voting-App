@@ -4,13 +4,13 @@ A project for the completion of the J component of Software Engineering course.
 The android application can be installed in the phones of the voter and the votes can be casted within the comfort of the voter without worrying about the risks.
 
 Tools used for implementation:
- IDE: Android Studio 
- Language Used: Java, Solidity 
- Database: Firebase real-time database 
- Blockchain: Ethereum Blockchain 
- Blockchain Setup: Ganache 
- Integration of blockchain in application: Web3j 
- User Interface (UI) design: XML
+•	IDE: Android Studio 
+•	Language Used: Java, Solidity 
+•	Database: Firebase real-time database 
+•	Blockchain: Ethereum Blockchain 
+•	Blockchain Setup: Ganache 
+•	Integration of blockchain in application: Web3j 
+•	User Interface (UI) design: XML
 
 
 Flowchart
